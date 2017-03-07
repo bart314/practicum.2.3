@@ -2,7 +2,7 @@ package demo;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class CommuncationDemo {
+public class CommunicationDemo {
 
 	public static void main(String args[]) {
 		final Queue<Integer> sharedQ = new LinkedList<>();
@@ -20,7 +20,7 @@ public class CommuncationDemo {
 		public Producer(Queue<Integer> sharedQ) {
 			this.sharedQ = sharedQ;
 		}
-		
+
 		@Override
 		public void run() {
 			for (int i = 0; i < 14; i++) {
